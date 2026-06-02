@@ -17,6 +17,7 @@ Repository นี้รวบรวมเอกสารการสอนภา
 - 🔵 **[บทที่ 2: ชนิดข้อมูล (Data Types) และตัวดำเนินการคณิตศาสตร์](lessons/02_C_Data_Types.md)**
 - 🟡 **[บทที่ 3: การควบคุมทิศทางโปรแกรม (if-else และ Loops)](lessons/03_C_Flow_Control.md)**
 - 🔴 **[บทที่ 4: อาร์เรย์ (Arrays) และ ฟังก์ชัน (Functions)](lessons/04_Arrays_and_Functions.md)**
+- 🏆 **[บทที่ 5: 🛠️ Workshop ตะลุยโจทย์ 10 ข้อ](lessons/05_Workshop.md)**
 
 ---
 *Created for Computer Club KMUTNB - 8 June 2026*

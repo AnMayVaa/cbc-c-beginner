@@ -1,6 +1,0 @@
-Question Text,Answer 1,Answer 2,Answer 3,Answer 4,Time Limit (sec),Correct Answer(s)
-What is the correct syntax to output 'Hello World' in C?,"print(""Hello World"");","printf(""Hello World"");","console.log(""Hello World"");","cout << ""Hello World"";",20,2
-How do you insert single-line comments in C?,/* comment */,# comment,// comment,<!-- comment -->,20,3
-Which function is the entry point of a C program?,start(),init(),main(),run(),20,3
-What is '#include <stdio.h>' used for?,To include standard input/output library,To include math functions,To include string functions,To define variables,20,1
-Which symbol is used to end a statement in C?,.,:,!,;,15,4

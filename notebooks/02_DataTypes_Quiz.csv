@@ -1,6 +1,0 @@
-Question Text,Answer 1,Answer 2,Answer 3,Answer 4,Time Limit (sec),Correct Answer(s)
-Which data type is used to store text characters?,int,char,float,string,20,2
-What is the correct format specifier for an integer?,%f,%c,%d,%s,20,3
-How much memory does a typical 'int' take in a 32-bit system?,1 byte,2 bytes,4 bytes,8 bytes,20,3
-What is the format specifier for a float?,%f,%d,%lf,%i,20,1
-Which of the following is NOT a basic data type in C?,int,char,float,string,20,4

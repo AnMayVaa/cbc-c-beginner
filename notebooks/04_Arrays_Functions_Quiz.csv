@@ -1,6 +1,0 @@
-Question Text,Answer 1,Answer 2,Answer 3,Answer 4,Time Limit (sec),Correct Answer(s)
-How do you declare an array of 5 integers?,int arr = [5];,array<int> arr[5];,int arr[5];,int arr(5);,30,3
-What is the index of the first element in an array?,1,0,-1,Depends on declaration,15,2
-Which of the following is a correct function declaration?,"function sum(int a, int b)","int sum(int a, int b);","sum(int a, int b) -> int","def sum(a, b):",30,2
-What keyword is used to return a value from a function?,yield,send,give,return,15,4
-Can a standard C array size be changed after it is created?,Yes,No,Only if it is global,Only if it is filled,20,2

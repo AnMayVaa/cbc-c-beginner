@@ -1,0 +1,39 @@
+import os
+
+os.makedirs('solutions/exercises', exist_ok=True)
+os.makedirs('solutions/workshop', exist_ok=True)
+
+# Generate Exercise Solutions
+def write_sol(path, code):
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(code)
+
+write_sol('solutions/exercises/1.1_hello_world.c', '#include <stdio.h>\nint main() {\n    printf("Hello CBC Boost Camp!\\n");\n    printf("My name is John\\n");\n    printf("I love Pizza!\\n");\n    return 0;\n}')
+write_sol('solutions/exercises/1.2_age_calculator.c', '#include <stdio.h>\nint main() {\n    int birth_year;\n    printf("Enter birth year (CE): ");\n    scanf("%d", &birth_year);\n    printf("You are %d years old!\\n", 2026 - birth_year);\n    return 0;\n}')
+write_sol('solutions/exercises/1.3_profile.c', '#include <stdio.h>\nint main() {\n    int age, weight;\n    printf("Enter your age: ");\n    scanf("%d", &age);\n    printf("Enter your weight: ");\n    scanf("%d", &weight);\n    printf("You are %d years old and your weight is %d!\\n", age, weight);\n    return 0;\n}')
+
+write_sol('solutions/exercises/2.1_multiply.c', '#include <stdio.h>\nint main() {\n    int num1, num2;\n    printf("Enter number 1: ");\n    scanf("%d", &num1);\n    printf("Enter number 2: ");\n    scanf("%d", &num2);\n    printf("Result: %d\\n", num1 * num2);\n    return 0;\n}')
+write_sol('solutions/exercises/2.2_area.c', '#include <stdio.h>\nint main() {\n    float w, h;\n    printf("Enter width: ");\n    scanf("%f", &w);\n    printf("Enter height: ");\n    scanf("%f", &h);\n    printf("Area = %.2f\\n", w * h);\n    return 0;\n}')
+write_sol('solutions/exercises/2.3_change.c', '#include <stdio.h>\nint main() {\n    int price = 35;\n    int pay = 100;\n    printf("Change: %d Baht\\n", pay - price);\n    return 0;\n}')
+
+write_sol('solutions/exercises/3.1_grading.c', '#include <stdio.h>\nint main() {\n    int score;\n    printf("Enter score: ");\n    scanf("%d", &score);\n    if(score > 100) printf("Cheating!\\n");\n    else if(score >= 80) printf("Grade: A\\n");\n    else if(score >= 70) printf("Grade: B\\n");\n    else if(score >= 60) printf("Grade: C\\n");\n    else if(score >= 50) printf("Grade: D\\n");\n    else printf("Grade: F\\n");\n    return 0;\n}')
+write_sol('solutions/exercises/3.2_even_odd.c', '#include <stdio.h>\nint main() {\n    int num;\n    printf("Enter number: ");\n    scanf("%d", &num);\n    if(num % 2 == 0) printf("Even\\n");\n    else printf("Odd\\n");\n    return 0;\n}')
+write_sol('solutions/exercises/3.3_multiplication_table.c', '#include <stdio.h>\nint main() {\n    int num;\n    printf("Enter number: ");\n    scanf("%d", &num);\n    for(int i=1; i<=12; i++) {\n        printf("%d x %d = %d\\n", num, i, num*i);\n    }\n    return 0;\n}')
+write_sol('solutions/exercises/3.4_stars.c', '#include <stdio.h>\nint main() {\n    int n;\n    printf("Enter N: ");\n    scanf("%d", &n);\n    for(int i=0; i<n; i++) {\n        printf("*");\n    }\n    printf("\\n");\n    return 0;\n}')
+
+write_sol('solutions/exercises/4.1_array_sum.c', '#include <stdio.h>\nint main() {\n    int arr[5];\n    int sum = 0;\n    for(int i=0; i<5; i++) {\n        printf("Enter price %d: ", i+1);\n        scanf("%d", &arr[i]);\n        sum += arr[i];\n    }\n    printf("Total: %d\\n", sum);\n    return 0;\n}')
+write_sol('solutions/exercises/4.2_array_avg.c', '#include <stdio.h>\nint main() {\n    int arr[5];\n    int sum = 0;\n    for(int i=0; i<5; i++) {\n        printf("Enter price %d: ", i+1);\n        scanf("%d", &arr[i]);\n        sum += arr[i];\n    }\n    printf("Average: %.2f\\n", sum / 5.0);\n    return 0;\n}')
+write_sol('solutions/exercises/4.3_double_func.c', '#include <stdio.h>\nint double_number(int x) {\n    return x * 2;\n}\nint main() {\n    printf("Double of 5 is %d\\n", double_number(5));\n    return 0;\n}')
+write_sol('solutions/exercises/4.4_pass_func.c', '#include <stdio.h>\nint check_pass(int score) {\n    if(score >= 50) return 1;\n    else return 0;\n}\nint main() {\n    printf("Score 60: %d\\n", check_pass(60));\n    printf("Score 40: %d\\n", check_pass(40));\n    return 0;\n}')
+
+# Generate Workshop Solutions
+write_sol('solutions/workshop/w01_mini_calc.c', '#include <stdio.h>\nint main() {\n    int a, b;\n    char op;\n    printf("Enter math expression (ex. 5 + 4): ");\n    scanf("%d %c %d", &a, &op, &b);\n    if(op == \'+\') printf("%d\\n", a+b);\n    else if(op == \'-\') printf("%d\\n", a-b);\n    else if(op == \'*\') printf("%d\\n", a*b);\n    else if(op == \'/\') printf("%d\\n", a/b);\n    return 0;\n}')
+write_sol('solutions/workshop/w02_vending.c', '#include <stdio.h>\nint main() {\n    int money, choice;\n    printf("Menu: 1=Water(10), 2=Cola(15)\\nInsert money: ");\n    scanf("%d", &money);\n    printf("Select menu: ");\n    scanf("%d", &choice);\n    int price = 0;\n    if(choice == 1) price = 10;\n    else if(choice == 2) price = 15;\n    if(money >= price) printf("Change: %d\\n", money - price);\n    else printf("Not enough money! Need %d more.\\n", price - money);\n    return 0;\n}')
+write_sol('solutions/workshop/w03_guess_number.c', '#include <stdio.h>\nint main() {\n    int secret = 42, guess = 0;\n    while(guess != secret) {\n        printf("Guess: ");\n        scanf("%d", &guess);\n        if(guess > secret) printf("Too high!\\n");\n        else if(guess < secret) printf("Too low!\\n");\n    }\n    printf("Correct!\\n");\n    return 0;\n}')
+write_sol('solutions/workshop/w04_star_pyramid.c', '#include <stdio.h>\nint main() {\n    int n;\n    printf("Enter N: ");\n    scanf("%d", &n);\n    for(int i=1; i<=n; i++) {\n        for(int j=1; j<=i; j++) {\n            printf("*");\n        }\n        printf("\\n");\n    }\n    return 0;\n}')
+write_sol('solutions/workshop/w05_find_max.c', '#include <stdio.h>\nint main() {\n    int max = 0, num = 0;\n    while(num != -1) {\n        printf("Enter number (-1 to stop): ");\n        scanf("%d", &num);\n        if(num > max) max = num;\n    }\n    printf("Max is %d\\n", max);\n    return 0;\n}')
+write_sol('solutions/workshop/w06_supermarket.c', '#include <stdio.h>\nfloat calc_total(int arr[]) {\n    int sum = 0;\n    for(int i=0; i<5; i++) sum += arr[i];\n    return sum * 1.07;\n}\nint main() {\n    int items[5] = {10, 20, 30, 40, 50};\n    printf("Total + VAT: %.2f\\n", calc_total(items));\n    return 0;\n}')
+write_sol('solutions/workshop/w07_pass_fail.c', '#include <stdio.h>\nvoid check(int arr[]) {\n    int p = 0, f = 0;\n    for(int i=0; i<10; i++) {\n        if(arr[i] >= 50) p++; else f++;\n    }\n    printf("Pass: %d, Fail: %d\\n", p, f);\n}\nint main() {\n    int scores[10] = {10,60,80,40,50,90,100,20,30,70};\n    check(scores);\n    return 0;\n}')
+write_sol('solutions/workshop/w08_reverser.c', '#include <stdio.h>\n#include <string.h>\nint main() {\n    char word[20];\n    printf("Enter word: ");\n    scanf("%s", word);\n    for(int i=strlen(word)-1; i>=0; i--) {\n        printf("%c", word[i]);\n    }\n    printf("\\n");\n    return 0;\n}')
+write_sol('solutions/workshop/w09_atm.c', '#include <stdio.h>\nint deposit(int bal, int amount) { return bal + amount; }\nint withdraw(int bal, int amount) { return bal - amount; }\nvoid check(int bal) { printf("Balance: %d\\n", bal); }\nint main() {\n    int bal = 1000, choice, amt;\n    while(1) {\n        printf("1=Dep, 2=With, 3=Chk, 0=Exit: ");\n        scanf("%d", &choice);\n        if(choice == 0) break;\n        else if(choice == 1) { scanf("%d", &amt); bal = deposit(bal, amt); }\n        else if(choice == 2) { scanf("%d", &amt); bal = withdraw(bal, amt); }\n        else if(choice == 3) check(bal);\n    }\n    return 0;\n}')
+write_sol('solutions/workshop/w10_lucky.c', '#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\nint main() {\n    srand(time(NULL));\n    int arr[5] = {101, 102, 103, 104, 105};\n    int index = rand() % 5;\n    printf("Winner ID is %d\\n", arr[index]);\n    return 0;\n}')
