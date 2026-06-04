@@ -1,3 +1,54 @@
+## Mathematical Calculations
+C supports basic mathematical operators:
+- Addition `+`
+- Subtraction `-`
+- Multiplication `*` 
+- Division `/`
+- Modulus `%` (Finds the remainder, popular for checking odd/even numbers)
+
+> **Warning:** Dividing an integer by an integer (`int` / `int`) will **always truncate the decimal**. For example, `5 / 2` will result in `2` (not 2.5). If you want a decimal result, at least one of the values must be a `float`.
+
+**Best Practice:** When calculating, we should store the computed value in a new variable first, and then display the new variable. This keeps the code clean and readable.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    int b = 3;
+    
+    // Calculate and store the results in new variables
+    int sum = a + b;
+    int difference = a - b;
+    int quotient = a / b;
+    int remainder = a % b;
+    
+    printf("10 + 3 = %d\n", sum);
+    printf("10 - 3 = %d\n", difference);
+    printf("10 / 3 = %d (Integer division truncates the decimal)\n", quotient);
+    printf("10 %% 3 = %d (Used to find the remainder of division)\n", remainder); // Type %% to display the % sign
+    return 0;
+}
+```
+
+### Exercise 2.1: Multiplication Calculator
+Receive 2 numbers (using `scanf`), calculate their product, store it in a new variable, and output the result.
+
+```text
+Enter number 1: 5
+Enter number 2: 4
+Result: 20
+```
+
+### Exercise 2.2: Rectangle Area
+Receive a width and a length, store them in floating-point variables. Calculate the area (width x length) and output the result.
+
+### Exercise 2.3: Cashier Change
+Suppose a product costs 35 THB and the user pays with a 100 THB bill. Write a program to calculate the change, store it in a variable, and display the change amount.
+
+
+---
+
 # Module 3: Flow Control
 
 Normally, a program executes sequentially from top to bottom. However, we can control the flow to let the program "make decisions" or "repeat" tasks.

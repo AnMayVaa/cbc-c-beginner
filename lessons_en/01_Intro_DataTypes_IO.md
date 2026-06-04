@@ -81,3 +81,49 @@ Enter your age: 15
 Enter your weight: 55
 You are 15 years old and your weight is 55!
 ```
+
+
+---
+
+# Module 2: Data Types and Variables
+
+A variable is a space in memory that we reserve to store data. We must define the correct data type so the computer can allocate memory appropriately.
+
+## Basic Data Types in C
+- `int` (Integer) is used to store **whole numbers** (e.g., 5, -10, 1000).
+- `float` (Floating point) is used to store **decimal numbers** (e.g., 3.14, -0.01).
+- `char` (Character) is used to store **a single character** (enclosed in single quotes `' '` e.g., `'A'`, `'z'`).
+
+| Data Type | Memory Size | Range (Approximate) |
+| --- | --- | --- |
+| `int` | 4 bytes | -2,147,483,648 to 2,147,483,647 |
+| `float` | 4 bytes | About 6-7 decimal places |
+| `char` | 1 byte | 1 character |
+
+### Variable Naming Rules
+1. No spaces allowed (you can use `_` instead, e.g., `my_score`).
+2. Cannot start with a number (e.g., `1player` will cause an Error; use `player1`).
+3. Cannot use reserved keywords (e.g., `int`, `return`, `main`).
+
+To use `printf` to display a variable's value, we must use the correct Format Specifier matching its data type:
+- `int` uses `%d`
+- `float` uses `%f`
+- `char` uses `%c`
+
+```c
+#include <stdio.h>
+
+int main() {
+    int score = 100;
+    float gpa = 3.99;
+    char grade = 'A';
+
+    printf("Score: %d\n", score);
+    printf("GPA: %.2f\n", gpa); // %.2f means display 2 decimal places
+    printf("Grade: %c\n", grade);
+    return 0;
+}
+```
+
+---
+
