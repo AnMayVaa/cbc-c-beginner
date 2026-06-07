@@ -12,6 +12,10 @@ For the easiest start, please open the **[Programiz C Online Compiler](https://w
 
 เมื่อน้องๆ อ่านเนื้อหาและเจอ **"โจทย์แบบฝึกหัด (Exercises)"** ให้สลับหน้าจอไปพิมพ์โค้ดลงในเว็บ Programiz และกดปุ่ม Run ได้เลยทันที! ไม่ต้องกังวลเรื่องการติดตั้งโปรแกรมในเครื่องให้วุ่นวาย
 
+## 📊 สไลด์ประกอบการสอน (Presentation Slides)
+
+- 📥 **[ดาวน์โหลดสไลด์ประกอบการสอน / Download Presentation PDF](presentation/c-beginner-presentation.pdf)**
+
 ## 📖 เนื้อหาบทเรียน (Lessons)
 
 เลือกเรียนตามหัวข้อด้านล่างนี้ได้เลยครับ (Choose your preferred language):
