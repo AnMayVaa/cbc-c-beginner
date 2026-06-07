@@ -21,12 +21,14 @@ For the easiest start, please open the **[Programiz C Online Compiler](https://w
 - 🔵 **[บทที่ 2: คณิตศาสตร์, ตรรกศาสตร์, การควบคุมทิศทาง และการทำซ้ำ](lessons_th/02_Math_Logic_FlowControl_Loops.md)**
 - 🟡 **[บทที่ 3: อาร์เรย์ (Arrays) และ ฟังก์ชัน (Functions)](lessons_th/03_Arrays_and_Functions.md)**
 - 🏆 **[บทที่ 4: 🛠️ Workshop รวมมิตรโจทย์ภาษา C](lessons_th/04_Workshop.md)**
+- 🌟 **[Bonus Challenge: ระบบจัดการรายรับ-รายจ่ายส่วนตัว](bonus_challenge/Bonus_Personal_Finance_Tracker.md)**
 
 ### 🇬🇧 English Version
 - 🟢 **[Module 1: Introduction, Data Types, and I/O](lessons_en/01_Intro_DataTypes_IO.md)**
 - 🔵 **[Module 2: Math, Logic, Flow Control, and Loops](lessons_en/02_Math_Logic_FlowControl_Loops.md)**
 - 🟡 **[Module 3: Arrays and Functions](lessons_en/03_Arrays_and_Functions.md)**
 - 🏆 **[Module 4: 🛠️ Workshop](lessons_en/04_Workshop.md)**
+- 🌟 **[Bonus Challenge: Personal Finance Tracker](bonus_challenge/Bonus_Personal_Finance_Tracker.md)**
 
 ---
 *Created for Computer Club KMUTNB - 8 June 2026*
